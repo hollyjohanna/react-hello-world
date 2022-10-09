@@ -1,0 +1,148 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    padding: 30px;
+}
+
+#hero {
+    background-color: aquamarine;
+    padding: 50px;
+}
+
+#footer {
+    background-color: beige;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px dashed aquamarine;
+    padding-bottom: 10px;
+}
+
+#count {
+    font-size: 200px;
+    color: aquamarine;
+    font-weight: 500;
+}
+
+.rarity-img {
+    width: 500px;
+}
+
+#scroll-container {
+    border: 3px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+  
+#scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+}
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+
+#gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#pony-img {
+    width: 31%;
+    object-fit: cover;
+    transition: all .3s ease-in-out;
+}
+
+#pony-img:hover {
+    border-radius: 200px;
+    scale: 1.1;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    border: 2px dashed black;
+    padding: 30px;
+}
+
+.car {
+    padding: 30px;
+    border: 1px solid aquamarine;
+    margin-top: 20px;
+}
+
+#dino-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+#dino-card {
+    width: 30%;
+}
+
+#dino-img {
+    width: 100%;
+    object-fit: contain;
+}
+
+#chocolate-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#chocolate-card {
+    width: 20%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+#choc-img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
